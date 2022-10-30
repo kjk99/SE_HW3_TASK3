@@ -1,9 +1,7 @@
 package de.uni.koeln.se.main;
 
 import java.util.Scanner; 
-
 import de.uni.koeln.se.state.Elevator;
-import de.uni.koeln.se.state.Elv_States;
 
 public class Main {
 	public static void main(String[] args) 
@@ -11,9 +9,7 @@ public class Main {
 		
 		 Scanner in = new Scanner(System.in); 
 		
-		System.out.println("Current Floor is 5"); 
-
-       
+		System.out.println("Current Floor is"+ " " +Elevator.current_Floor); 
 		System.out.println("Enter destination Floor: (0 to 10):"); 
 
 		 int dest_floor = in.nextInt(); 
@@ -22,7 +18,7 @@ public class Main {
 		 System.out.println("--------------------------------------------");
 
 		
-		 Elevator elv=new  Elevator(dest_floor);
+		new Elevator(dest_floor);
 
 		
 	}
